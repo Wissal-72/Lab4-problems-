@@ -24,12 +24,16 @@ public record WeatherData(double temperatureCelsius, String conditions) {
     }
 
     public static void main(String[] args) {
-        WeatherData weather = new WeatherData(30, "sunny");
+        WeatherData weather = new WeatherData(25, "sunny");
+        System.out.print("Today's weather:");
         System.out.println(weather.getSummary());
-        WeatherData  new_weather = WeatherData.fromFahrenheit(41, "cloudy");
-        System.out.println("****************************************");
-        System.out.println("Temperature : "+ new_weather.temperatureCelsius()+"°C");
-        System.out.println("Condition : "+ new_weather.conditions());
+        WeatherData  new_weather = WeatherData.fromFahrenheit(50, "cloudy");
+        System.out.printf("Yesterday's weather : Curreent weather : %.1f°C (%.1f°F) and %s",
+                 new_weather.temperatureCelsius(),
+                new_weather.temperatureFahrenheit(),
+                new_weather.conditions()
+
+        );
 
     }
 }
