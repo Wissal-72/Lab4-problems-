@@ -24,13 +24,13 @@ public class TestProblem6 {
 
         System.out.println("\n==SUBJECTS SYLLABUSLINE==\n");
         System.out.println(s1.syllabusLine());
-        System.out.print("--------------------------\n");
+        System.out.print("-------------------------\n");
         System.out.println(s2.syllabusLine());
 
 
         System.out.println("\n==IS INTRO COURSE ?==\n");
         System.out.println(s1+ "\nis intro course -> "+ s1.isIntroCourse());
-        System.out.print("--------------------------\n");
+        System.out.print("-------------------------\n");
         System.out.println(s2+ "\nis intro course -> "+ s2.isIntroCourse());
 
 
